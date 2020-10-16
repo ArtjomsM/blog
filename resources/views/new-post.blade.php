@@ -26,16 +26,16 @@
                     <form action="\create" method="post" class="pb-5">
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <label for="formGroupExampleInput">Title</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" name="title" placeholder="title.." required>
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="title.." required>
                         </div>
                         <div class="form-group">
-                            <label for="formGroupExampleInput2">Body</label>
-                            <textarea class="form-control" id="formGroupExampleInput2" name="text" placeholder="body text.." required></textarea>
+                            <label for="text">Body</label>
+                            <textarea class="form-control" id="text" name="text" placeholder="body text.." required></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="formGroupExampleInput2">Image URL</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" name="image" placeholder="image url.." required>
+                            <label for="image">Image URL</label>
+                            <input type="text" class="form-control" id="image" name="image" placeholder="image url.." required>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

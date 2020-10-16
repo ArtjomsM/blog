@@ -17,6 +17,7 @@ Route::get('/', 'App\Http\Controllers\HomeController@index');
 
 Route::get('/post/{id}', 'App\Http\Controllers\PostController@view');
 
+Route::post('/email', 'App\Http\Controllers\HomeController@get_email');
 
 Auth::routes();
 

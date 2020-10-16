@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Database\Query\Builder;
 use App\Models\Post;
+use App\Models\Email;
 
 class HomeController extends Controller
 {
@@ -25,5 +26,14 @@ class HomeController extends Controller
 
     public function login() {
         return view('new-post');
+    }
+
+    public function get_email(Request $request) {
+        $email = new Email();
+        $email->email = $request->email;
+
+        $email->save();
+
+        return redirect('/');
     }
 }

@@ -1,19 +1,20 @@
+
+
+
 <footer class="container-fluid bg-dark py-4">
     <div class="container">
         <div class="row">
             <div class="col-8 col-md-6 col-xl-4">
                 <h5 class="font-weight-bold text-uppercase text-center pb-3 text-white">subscribe to newsletters</h5>
-                <form>
-                    <div class="form-group d-flex">
-                        <input type="email" class="form-control" id="email" placeholder="e-mail">
-                        <button type="submit" class="btn btn-primary ml-1">Submit</button>
-                    </div>
+                <form action="/email" method="post" class="form-group d-flex">
+                    {{ csrf_field() }}
+                    <input type="email" class="form-control" name="email" placeholder="e-mail">
+                    <button type="submit" class="btn btn-primary ml-1">Submit</button>
                 </form>
             </div>
         </div>
-
     </div>
-    
+
     <div class="d-flex justify-content-end pr-3">
         @if (Route::has('login'))
         @auth
