@@ -6,7 +6,7 @@
                 <form action="/email" method="post" class="form-group d-flex">
                     {{ csrf_field() }}
                     <input type="email" class="form-control" name="email" placeholder="e-mail" required>
-                    <button type="submit" class="btn btn-primary ml-1">Submit</button>
+                    <button type="submit" class="btn btn-primary ml-1 text-uppercase">Submit</button>
                 </form>
                 @if (session('message'))
                 <div class="alert alert-success">
