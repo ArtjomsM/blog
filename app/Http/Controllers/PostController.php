@@ -13,6 +13,7 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->text = $request->text;
         $post->image = $request->image;
+        $post->topic = $request->topic;
 
         $post->save();
 

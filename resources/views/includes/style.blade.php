@@ -73,6 +73,16 @@
         transition: all 0.4s;
     }
 
+    .topic {
+        top: -10px;
+        left: -10px;
+    }
+
+    .topic:hover {
+        background-color: lightgrey !important;
+        color: black;
+    }
+
     /* / POSTS ON MAIN PAGE */
 
     /* ABOUT PAGE */

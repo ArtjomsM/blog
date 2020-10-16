@@ -19,6 +19,8 @@ Route::get('/about', 'App\Http\Controllers\HomeController@about');
 
 Route::get('/contact', 'App\Http\Controllers\HomeController@contact');
 
+// Route::get('/{topic}', 'App\Http\Controllers\PostController@topic');
+
 Route::get('/post/{id}', 'App\Http\Controllers\PostController@view');
 
 Route::post('/send', 'App\Http\Controllers\EmailController@send_email');

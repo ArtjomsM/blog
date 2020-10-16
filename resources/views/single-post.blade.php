@@ -12,6 +12,7 @@
     </div>
     <div class="row">
         <div class="col">
+        <a href="/{{ $post->topic }}"><span class="topic bg-white border border-dark text-uppercase py-2 px-4 position-absolute">{{ $post->topic }}</span></a>
             <div class="image" style="background-image: url({{ $post->image }});"></div>
         </div>
     </div>

@@ -9,7 +9,7 @@
         <div class="col-12 col-md-8">
             <h3 class="pb-4">Create new post</h3>
 
-            <form action="\create" method="post" class="pb-5">
+            <form action="\new" method="post" class="pb-5">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="title">Title</label>
@@ -18,6 +18,10 @@
                 <div class="form-group">
                     <label for="image">Image URL</label>
                     <input type="text" class="form-control" id="image" name="image" placeholder="image url.." required>
+                </div>
+                <div class="form-group">
+                    <label for="topic">Topic</label>
+                    <input type="text" class="form-control" id="topic" name="topic" placeholder="topic.." required>
                 </div>
                 <div class="form-group">
                     <label for="text">Body</label>
