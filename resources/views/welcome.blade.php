@@ -38,13 +38,13 @@
                         <div class="col translatey  p-2">
                             <div class="border p-2">
                                 <a href="http://127.0.0.1:8001/post/{{ $first->id }}">
-                                    <div class="first-image" style="background-image: url({{ $first->image }});"></div>
+                                    <div class="first-image" style="background-image: url( {{ $first->image }} );"></div>
                                 </a>
                                 <h3 class="pt-2">{{ $first->title }}</h3>
-                                <div class="d-flex justify-content-between">
-                                    <p>{{ $first->created_at->diffForHumans() }}</p>
-                                    <a href="http://127.0.0.1:8001/post/{{ $first->id }}">Read more...</a>
-                                </div>
+                                <p class="mb-2">{{ $first->created_at->diffForHumans() }}</p>
+                                <q>{{ strip_tags(substr($first->text, 0, 309)) }}</q>
+                                <a href="http://127.0.0.1:8001/post/{{ $first->id }}" class="text-info">Read more...</a>
+
                             </div>
 
                         </div>
@@ -58,13 +58,13 @@
                         <div class="col-6 col-lg-4 col-xl-3 translatey p-2">
                             <div class="border p-2">
                                 <a href="http://127.0.0.1:8001/post/{{ $post->id }}">
-                                    <div class="post-image" style="background-image: url({{ $post->image }});"></div>
+                                    <div class="post-image" style="background-image: url( {{ $post->image }} );"></div>
                                 </a>
                                 <h3 class="pt-2">{{ $post->title }}</h3>
-                                <div class="d-flex justify-content-between">
-                                    <p>{{ $post->created_at->diffForHumans() }}</p>
-                                    <a href="http://127.0.0.1:8001/post/{{ $post->id }}">Read more...</a>
-                                </div>
+                                <p class="mb-2">{{ $post->created_at->diffForHumans() }}</p>
+                                <q>{{ strip_tags(substr($post->text, 0, 160)) }}</q>
+                                <a href="http://127.0.0.1:8001/post/{{ $post->id }}" class="text-info">Read more...</a>
+
                             </div>
                         </div>
                         @endif

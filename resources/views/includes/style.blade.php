@@ -25,7 +25,7 @@
     } 
 
     .navbar-brand {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .nav-link {
@@ -49,13 +49,13 @@
     }
 
     .translatey:hover h3 {
-        transform: translateY(7px);
-        transition: all 0.3s;
+        transform: translateY(5px);
+        transition: all 0.4s;
     }
 
     .translatey:hover p {
-        transform: translateY(-7px);
-        transition: all 0.3s;
+        transform: translateY(-5px);
+        transition: all 0.4s;
     }
 
 </style>

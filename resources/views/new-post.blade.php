@@ -31,7 +31,7 @@
                         </div>
                         <div class="form-group">
                             <label for="text">Body</label>
-                            <textarea class="form-control" id="text" name="text" placeholder="body text.." required></textarea>
+                            <textarea class="form-control" id="text" name="text" placeholder="body text.." rows="20" required></textarea>
                         </div>
                         <div class="form-group">
                             <label for="image">Image URL</label>
