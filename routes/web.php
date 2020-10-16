@@ -19,11 +19,11 @@ Route::get('/about', 'App\Http\Controllers\HomeController@about');
 
 Route::get('/contact', 'App\Http\Controllers\HomeController@contact');
 
-Route::post('/send', 'App\Http\Controllers\HomeController@send_email');
-
 Route::get('/post/{id}', 'App\Http\Controllers\PostController@view');
 
-Route::post('/email', 'App\Http\Controllers\HomeController@get_email');
+Route::post('/send', 'App\Http\Controllers\EmailController@send_email');
+
+Route::post('/email', 'App\Http\Controllers\EmailController@get_email');
 
 Auth::routes();
 
