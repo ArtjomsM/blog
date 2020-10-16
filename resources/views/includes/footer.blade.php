@@ -1,7 +1,7 @@
 <footer class="container-fluid bg-dark py-4">
     <div class="container">
         <div class="row">
-            <div class="col-8 col-md-6 col-xl-4">
+            <div class="col-8 col-md-6 col-lg-5 col-xl-4">
                 <h5 class="font-weight-bold text-uppercase text-center pb-3 text-white">subscribe to newsletters</h5>
                 <form action="/email" method="post" class="form-group d-flex">
                     {{ csrf_field() }}
