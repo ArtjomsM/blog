@@ -1,15 +1,24 @@
 <style>
+    /* GLOBAL */
     html {
         scroll-behavior: smooth;
     }
 
     main {
-        min-height: calc(100vh - 286px );
+        min-height: calc(100vh - 286px);
     }
 
     body {
         font-family: 'Nunito';
     }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    /* / GLOBAL */
+
+    /* HEADER */
 
     header {
         min-height: 70vh;
@@ -20,9 +29,9 @@
         font-size: 5rem;
     }
 
-    h2 {
-        font-size: 2.5rem;
-    } 
+    /* HEADER */
+
+    /* NAVBAR */
 
     .navbar-brand {
         font-size: 2rem;
@@ -32,7 +41,13 @@
         font-size: 1.2rem;
     }
 
-    .post-image, .first-image, .image {
+    /* / NAVBAR */
+
+    /* POSTS ON MAIN PAGE */
+
+    .post-image,
+    .first-image,
+    .image {
         height: 250px;
         width: 100%;
         background-position: center;
@@ -58,4 +73,33 @@
         transition: all 0.4s;
     }
 
+    /* / POSTS ON MAIN PAGE */
+
+    /* ABOUT PAGE */
+
+    .about p {
+        font-size: 1.2rem;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .about-image1 {
+        background-image: url(https://picsum.photos/id/247/300/300);
+    }
+
+    .about-image2 {
+        background-image: url(https://picsum.photos/id/547/300/300);
+    }
+
+    .about-image3 {
+        background-image: url(https://picsum.photos/id/267/300/300);
+    }
+
+    /* / ABOUT PAGE */
 </style>
