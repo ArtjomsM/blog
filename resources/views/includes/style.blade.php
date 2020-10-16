@@ -87,6 +87,12 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        opacity: 1;
+        transition: 0.5s ease;
+    }
+
+    .about-image:hover {
+        opacity: 0.7;
     }
 
     .about-image1 {
