@@ -1,6 +1,3 @@
-
-
-
 <footer class="container-fluid bg-dark py-4">
     <div class="container">
         <div class="row">
@@ -8,9 +5,14 @@
                 <h5 class="font-weight-bold text-uppercase text-center pb-3 text-white">subscribe to newsletters</h5>
                 <form action="/email" method="post" class="form-group d-flex">
                     {{ csrf_field() }}
-                    <input type="email" class="form-control" name="email" placeholder="e-mail">
+                    <input type="email" class="form-control" name="email" placeholder="e-mail" required>
                     <button type="submit" class="btn btn-primary ml-1">Submit</button>
                 </form>
+                @if (session('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+                @endif
             </div>
         </div>
     </div>

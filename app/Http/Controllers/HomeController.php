@@ -34,6 +34,7 @@ class HomeController extends Controller
 
         $email->save();
 
+        $request->session()->flash('message', 'You have successfully subscribed!');
         return redirect('/');
     }
 }
