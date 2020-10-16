@@ -34,7 +34,7 @@ class HomeController extends Controller
         return view('contact');
     }
 
-    public function login()
+    public function create()
     {
         return view('new-post');
     }

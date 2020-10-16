@@ -27,6 +27,6 @@ Route::post('/email', 'App\Http\Controllers\EmailController@get_email');
 
 Auth::routes();
 
-Route::get('/new', 'App\Http\Controllers\HomeController@login');
+Route::get('/create', 'App\Http\Controllers\HomeController@create');
 
-Route::post('/create', 'App\Http\Controllers\PostController@create');
+Route::post('/new', 'App\Http\Controllers\PostController@new');

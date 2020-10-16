@@ -20,7 +20,7 @@
     <div class="d-flex justify-content-end pr-3">
         @if (Route::has('login'))
         @auth
-        <a href="{{ url('/new') }}" class="text-sm text-white-50 underline">Add new post</a>
+        <a href="{{ url('/create') }}" class="text-sm text-white-50 underline">Add new post</a>
         @else
         <a href="{{ route('login') }}" class="text-sm text-white-50 underline">Login</a>
         @endif

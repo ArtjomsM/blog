@@ -16,12 +16,12 @@
                     <input type="text" class="form-control" id="title" name="title" placeholder="title.." required>
                 </div>
                 <div class="form-group">
-                    <label for="text">Body</label>
-                    <textarea class="form-control" id="text" name="text" placeholder="body text.." rows="20" required></textarea>
-                </div>
-                <div class="form-group">
                     <label for="image">Image URL</label>
                     <input type="text" class="form-control" id="image" name="image" placeholder="image url.." required>
+                </div>
+                <div class="form-group">
+                    <label for="text">Body</label>
+                    <textarea class="form-control" id="text" name="text" placeholder="body text.." rows="20" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
