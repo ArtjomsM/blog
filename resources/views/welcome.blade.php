@@ -28,8 +28,8 @@
                         <div class="dropdown">
                             <div onclick="sortDropdown()" class="dropbtn position-relative">Sort by</div>
                             <div id="sort" class="dropdown-content position-absolute">
-                                <a href="/" class="text-decoration-none d-block p-2">Newest</a>
-                                <a href="/sort-asc" class="text-decoration-none d-block p-2">Oldest</a>
+                                <a href="/" class="text-decoration-none d-block p-2">Newest first</a>
+                                <a href="/asc" class="text-decoration-none d-block p-2">Oldest first</a>
                             </div>
                         </div>
 

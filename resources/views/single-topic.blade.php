@@ -11,7 +11,28 @@
 <main class="container">
     <div class="row">
         <div class="col text-center text-uppercase py-5">
-            <h2>{{ $topic }}</h2>
+            <h2>Posts about {{ $topic }}</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col py-3 d-flex justify-content-between">
+            <div class="dropdown">
+                <div onclick="sortDropdown()" class="dropbtn position-relative">Sort by</div>
+                <div id="sort" class="dropdown-content position-absolute">
+                    <a href="/topic/{{ $topic }}" class="text-decoration-none d-block p-2">Newest first</a>
+                    <a href="/topic/{{ $topic }}/asc" class="text-decoration-none d-block p-2">Oldest first</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <div onclick="filterDropdown()" class="dropbtn position-relative mr-4">Filter by</div>
+                <div id="filter" class="dropdown-content position-absolute">
+                    <a href="/topic/Business" class="text-decoration-none d-block p-2">Business</a>
+                    <a href="/topic/Health" class="text-decoration-none d-block p-2">Health</a>
+                    <a href="/topic/Technology" class="text-decoration-none d-block p-2">Technology</a>
+                </div>
+            </div>
         </div>
     </div>
 
