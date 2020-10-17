@@ -26,10 +26,10 @@
                 <div class="row">
                     <div class="col py-3 d-flex justify-content-between">
                         <div class="dropdown">
-                            <div onclick="dropdown()" class="dropbtn position-relative">Sort</div>
+                            <div onclick="dropdown()" class="dropbtn position-relative">Sort by</div>
                             <div id="myDropdown" class="dropdown-content position-absolute">
-                                <a href="#" class="text-decoration-none d-block p-2">Link 1</a>
-                                <a href="#" class="text-decoration-none d-block p-2">Link 2</a>
+                                <a href="/" class="text-decoration-none d-block p-2">Newest</a>
+                                <a href="/sort-asc" class="text-decoration-none d-block p-2">Oldest</a>
                             </div>
                         </div>
 

@@ -1,3 +1,5 @@
+
+// DROPDOWN FUNCTIONS
 function dropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -14,3 +16,4 @@ window.onclick = function(event) {
         }
     }
 }
+// /DROPDOWN FUNCTION

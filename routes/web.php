@@ -18,7 +18,11 @@ Route::get('/create', 'App\Http\Controllers\HomeController@create');
 
 Route::post('/new', 'App\Http\Controllers\PostController@new');
 
+
 Route::get('/', 'App\Http\Controllers\HomeController@index');
+
+Route::get('/sort-asc', 'App\Http\Controllers\HomeController@sort_asc');
+
 
 Route::get('/about', 'App\Http\Controllers\HomeController@about');
 
