@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
-@section('title', '{{ $post->title }}')
+@section('title')
+{{ $post->title }}
+@endsection
 
 @section('content')
 
