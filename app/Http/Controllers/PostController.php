@@ -20,13 +20,24 @@ class PostController extends Controller
         return redirect('/');
     }
 
-
     public function view($id)
     {
         $post = Post::findOrFail($id);
 
         return view('single-post', [
             'post' => $post
+        ]);
+    }
+
+    public function topic($topic)
+    {
+        $posts = Post::orderBy('created_at', 'DESC')
+            ->where('topic', $topic)
+            ->get();
+
+        return view('single-topic', [
+            'posts' => $posts,
+            'topic' => $topic
         ]);
     }
 }

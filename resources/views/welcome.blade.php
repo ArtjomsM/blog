@@ -31,7 +31,7 @@
                             <a href="http://127.0.0.1:8001/post/{{ $first->id }}">
                                 <div class="first-image" style="background-image: url( {{ $first->image }} );"></div>
                             </a>
-                            <a href="/{{ $first->topic }}"><span class="topic bg-white border border-dark text-uppercase py-2 px-4 position-absolute">{{ $first->topic }}</span></a>
+                            <a href="/topic/{{ $first->topic }}"><span class="topic bg-white border border-dark text-uppercase py-2 px-4 position-absolute">{{ $first->topic }}</span></a>
                             <h3 class="pt-2">{{ $first->title }}</h3>
                             <p class="mb-2">{{ $first->created_at->diffForHumans() }}</p>
                             <q>{{ strip_tags(substr($first->text, 0, 309)) }}</q>
@@ -52,7 +52,7 @@
                             <a href="http://127.0.0.1:8001/post/{{ $post->id }}">
                                 <div class="post-image" style="background-image: url( {{ $post->image }} );"></div>
                             </a>
-                            <a href="/{{ $post->topic }}"><span class="topic bg-white border border-dark text-uppercase py-1 px-2 position-absolute">{{ $post->topic }}</span></a>
+                            <a href="/topic/{{ $post->topic }}"><span class="topic bg-white border border-dark text-uppercase py-1 px-2 position-absolute">{{ $post->topic }}</span></a>
                             <h3 class="pt-2">{{ $post->title }}</h3>
                             <p class="mb-2">{{ $post->created_at->diffForHumans() }}</p>
                             <q>{{ strip_tags(substr($post->text, 0, 160)) }}</q>
