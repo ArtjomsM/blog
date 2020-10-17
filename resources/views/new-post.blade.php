@@ -20,11 +20,15 @@
                 </div>
                 <div class="form-group">
                     <label for="image">Image URL</label>
-                    <input type="text" class="form-control" id="image" name="image" placeholder="image url.." required>
+                    <input type="url" class="form-control" id="image" name="image" placeholder="image url.." value="https://picsum.photos/id/000/1920/1080" required>
                 </div>
                 <div class="form-group">
                     <label for="topic">Topic</label>
-                    <input type="text" class="form-control" id="topic" name="topic" placeholder="topic.." required>
+                    <select class="form-control" id="topic" name="topic" placeholder="topic.." required>
+                        <option value="Business">Business</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Health">Health</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="text">Body</label>

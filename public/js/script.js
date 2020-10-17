@@ -1,7 +1,11 @@
 
 // DROPDOWN FUNCTIONS
-function dropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function sortDropdown() {
+    document.getElementById("sort").classList.toggle("show");
+}
+
+function filterDropdown() {
+    document.getElementById("filter").classList.toggle("show");
 }
 
 window.onclick = function(event) {
