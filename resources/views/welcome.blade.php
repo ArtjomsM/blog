@@ -1,4 +1,4 @@
-@extends('layouts.welcome-layout')
+@extends('layouts.main')
 
 @section('title', 'Blog')
 
@@ -20,6 +20,20 @@
                 <div class="row text-center ">
                     <div class="col text-uppercase pb-3">
                         <h2>Recent posts</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col py-3 d-flex justify-content-between">
+                        <div class="dropdown">
+                            <div onclick="dropdown()" class="dropbtn position-relative">Sort</div>
+                            <div id="myDropdown" class="dropdown-content position-absolute">
+                                <a href="#" class="text-decoration-none d-block p-2">Link 1</a>
+                                <a href="#" class="text-decoration-none d-block p-2">Link 2</a>
+                            </div>
+                        </div>
+
+                    <div>Filter</div>
                     </div>
                 </div>
 

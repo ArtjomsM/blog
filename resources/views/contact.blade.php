@@ -4,6 +4,8 @@
 
 @section('content')
 
+@include ('includes.nav')
+
 <main class="container">
     <div class="row">
         <div class="col text-center text-uppercase py-5">
