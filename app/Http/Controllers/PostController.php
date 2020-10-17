@@ -52,4 +52,37 @@ class PostController extends Controller
             'topic' => $topic
         ]);
     }
+
+    public function get_all_posts()
+    {
+
+        $posts = Post::orderBy('created_at', 'DESC')
+            ->get();
+
+        $first_post = Post::orderBy('created_at', 'DESC')
+            ->take(1)
+            ->get();
+
+        return view('all-posts', [
+            'posts' => $posts,
+            'first_post' => $first_post
+        ]);
+    }
+
+    public function get_all_posts_asc()
+    {
+
+        $posts = Post::orderBy('created_at', 'ASC')
+            ->get();
+
+        $first_post = Post::orderBy('created_at', 'ASC')
+            ->take(1)
+            ->get();
+
+        return view('all-posts', [
+            'posts' => $posts,
+            'first_post' => $first_post
+        ]);
+    }
+
 }

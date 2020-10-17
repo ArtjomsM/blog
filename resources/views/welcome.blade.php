@@ -55,7 +55,7 @@
                             <a href="/topic/{{ $first->topic }}"><span class="topic bg-white border border-dark text-uppercase py-2 px-4 position-absolute">{{ $first->topic }}</span></a>
                             <h3 class="pt-2">{{ $first->title }}</h3>
                             <p class="mb-2">{{ $first->created_at->diffForHumans() }}</p>
-                            <q>{{ strip_tags(substr($first->text, 0, 309)) }}</q>
+                            <q>{{ strip_tags(substr($first->text, 0, 307)) }}</q>
                             <a href="http://127.0.0.1:8001/post/{{ $first->id }}" class="text-info">Read more...</a>
 
                         </div>
@@ -63,7 +63,6 @@
                     </div>
                     @endforeach
                 </div>
-
                 <div class="row d-flex flex-wrap">
                     @foreach ($posts as $post)
 
@@ -76,20 +75,24 @@
                             <a href="/topic/{{ $post->topic }}"><span class="topic bg-white border border-dark text-uppercase py-1 px-2 position-absolute">{{ $post->topic }}</span></a>
                             <h3 class="pt-2">{{ $post->title }}</h3>
                             <p class="mb-2">{{ $post->created_at->diffForHumans() }}</p>
-                            <q>{{ strip_tags(substr($post->text, 0, 160)) }}</q>
+                            <q>{{ strip_tags(substr($post->text, 0, 123)) }}</q>
                             <a href="http://127.0.0.1:8001/post/{{ $post->id }}" class="text-info">Read more...</a>
-
                         </div>
                     </div>
                     @endif
                     @endforeach
                 </div>
-
-
+            </div>
+        </div>
+        <div class="row">
+            <div class="col pb-5 text-center">
+                @if (count($posts) >= 9)
+                <a href="/all-posts" class="btn btn-secondary text-uppercase py-3 px-5">All posts</a>
+                @endif
             </div>
         </div>
     </div>
-    </div>
+
 </main>
 
 @endsection

@@ -34,6 +34,10 @@ Route::get('/topic/{topic}/asc', 'App\Http\Controllers\PostController@sort_asc')
 
 Route::get('/post/{id}', 'App\Http\Controllers\PostController@view');
 
+Route::get('/all-posts', 'App\Http\Controllers\PostController@get_all_posts');
+
+Route::get('/all-posts/asc', 'App\Http\Controllers\PostController@get_all_posts_asc');
+
 Route::post('/send', 'App\Http\Controllers\EmailController@send_email');
 
 Route::post('/email', 'App\Http\Controllers\EmailController@get_email');

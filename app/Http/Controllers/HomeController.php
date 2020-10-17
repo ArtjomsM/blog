@@ -12,6 +12,7 @@ class HomeController extends Controller
     {
 
         $posts = Post::orderBy('created_at', 'DESC')
+            ->take(9)
             ->get();
 
         $first_post = Post::orderBy('created_at', 'DESC')
@@ -24,18 +25,19 @@ class HomeController extends Controller
         ]);
     }
 
-    public function sort_asc() {
+    public function sort_asc()
+    {
         $posts = Post::orderBy('created_at', 'ASC')
-        ->get();
+            ->get();
 
-    $first_post = Post::orderBy('created_at', 'ASC')
-        ->take(1)
-        ->get();
+        $first_post = Post::orderBy('created_at', 'ASC')
+            ->take(1)
+            ->get();
 
-    return view('welcome', [
-        'posts' => $posts,
-        'first_post' => $first_post
-    ]);
+        return view('welcome', [
+            'posts' => $posts,
+            'first_post' => $first_post
+        ]);
     }
 
 
