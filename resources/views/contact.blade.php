@@ -29,7 +29,7 @@
                 <button type="submit" class="btn btn-primary px-4 text-uppercase">Send</button>
             </form>
             @if (session('message'))
-            <div class="alert alert-success">
+            <div class="alert alert-success pt-3">
                 {{ session('message') }}<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
             </div>
             @endif
