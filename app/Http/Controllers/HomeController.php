@@ -24,6 +24,21 @@ class HomeController extends Controller
         ]);
     }
 
+    public function sort_asc() {
+        $posts = Post::orderBy('created_at', 'ASC')
+        ->get();
+
+    $first_post = Post::orderBy('created_at', 'ASC')
+        ->take(1)
+        ->get();
+
+    return view('welcome', [
+        'posts' => $posts,
+        'first_post' => $first_post
+    ]);
+    }
+
+
     public function about()
     {
         return view('about');

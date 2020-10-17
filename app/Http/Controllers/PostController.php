@@ -40,4 +40,16 @@ class PostController extends Controller
             'topic' => $topic
         ]);
     }
+
+    public function sort_asc($topic)
+    {
+        $posts = Post::orderBy('created_at', 'ASC')
+            ->where('topic', $topic)
+            ->get();
+
+        return view('single-topic', [
+            'posts' => $posts,
+            'topic' => $topic
+        ]);
+    }
 }

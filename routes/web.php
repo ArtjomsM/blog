@@ -18,13 +18,19 @@ Route::get('/create', 'App\Http\Controllers\HomeController@create');
 
 Route::post('/new', 'App\Http\Controllers\PostController@new');
 
+
 Route::get('/', 'App\Http\Controllers\HomeController@index');
+
+Route::get('/asc', 'App\Http\Controllers\HomeController@sort_asc');
+
 
 Route::get('/about', 'App\Http\Controllers\HomeController@about');
 
 Route::get('/contact', 'App\Http\Controllers\HomeController@contact');
 
 Route::get('/topic/{topic}', 'App\Http\Controllers\PostController@topic');
+
+Route::get('/topic/{topic}/asc', 'App\Http\Controllers\PostController@sort_asc');
 
 Route::get('/post/{id}', 'App\Http\Controllers\PostController@view');
 
