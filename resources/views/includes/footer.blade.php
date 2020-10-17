@@ -14,18 +14,21 @@
                 </div>
                 @endif
             </div>
+
+            <div class="col-4 offset-md-3 col-md-3 offset-lg-5 col-lg-2 offset-xl-6 d-flex justify-content-end flex-wrap align-items-end">
+                <div>
+                    @if (Route::has('login'))
+                    @auth
+                    <a href="{{ url('/create') }}" class="text-sm text-white-50 underline">Add new post</a>
+                    @else
+                    <a href="{{ route('login') }}" class="text-sm text-white-50 underline">Login</a>
+                    @endif
+                    @endif
+                </div>
+                <div class="text-right text-white-50">&COPY;A.M. 2020</div>
+            </div>
+
         </div>
     </div>
-
-    <div class="d-flex justify-content-end pr-3">
-        @if (Route::has('login'))
-        @auth
-        <a href="{{ url('/create') }}" class="text-sm text-white-50 underline">Add new post</a>
-        @else
-        <a href="{{ route('login') }}" class="text-sm text-white-50 underline">Login</a>
-        @endif
-        @endif
-    </div>
-    <p class="text-right text-white-50 pr-3">&COPY;A.M. 2020</p>
 
 </footer>
