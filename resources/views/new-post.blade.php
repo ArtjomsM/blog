@@ -8,9 +8,14 @@
 
 @auth
 <main class="container">
-    <div class="row pt-5">
+    <div class="row">
+        <div class="col text-center text-uppercase py-5">
+            <h2>Create new post</h2>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-12 col-md-8">
-            <h3 class="pb-4">Create new post</h3>
+
 
             <form action="\new" method="post" class="pb-5">
                 {{ csrf_field() }}
@@ -34,7 +39,7 @@
                     <label for="text">Body</label>
                     <textarea class="form-control" id="text" name="text" placeholder="body text.." rows="20" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary text-uppercase">Submit</button>
             </form>
 
         </div>

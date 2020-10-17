@@ -20,17 +20,23 @@ h2 {
 /* HEADER */
 
 header {
-    min-height           : 70vh;
-    background-attachment: fixed;
+    min-height     : 60vh;
+    background     : url("https://picsum.photos/id/180/1920/1080") no-repeat center fixed;
+    background-size: cover;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size  : 5.5rem;
+    text-shadow: 2px 2px 2px black;
 }
 
 /* HEADER */
 
 /* NAVBAR */
+
+nav {
+    background-color: rgba(236, 236, 236, 0.8);
+}
 
 .navbar-brand {
     font-size: 2rem;
@@ -62,14 +68,17 @@ h1 {
     height: 600px !important;
 }
 
-.translatey:hover h3 {
-    transform : translateY(5px);
+.translatey h3,
+.translatey p {
     transition: all 0.4s;
 }
 
+.translatey:hover h3 {
+    transform: translateY(5px);
+}
+
 .translatey:hover p {
-    transform : translateY(-5px);
-    transition: all 0.4s;
+    transform: translateY(-5px);
 }
 
 .topic {
@@ -135,7 +144,7 @@ h1 {
     min-width       : 120px;
     box-shadow      : 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index         : 1;
-    font-size: 1.1rem;
+    font-size       : 1.1rem;
 }
 
 .dropdown-content a:hover {

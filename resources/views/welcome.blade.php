@@ -4,7 +4,7 @@
 
 @section('content')
 
-<header class="bg-dark d-flex justify-content-center align-items-center text-center">
+<header class="d-flex justify-content-center align-items-center text-center">
     <h1 class="text-uppercase text-white font-weight-bold">
         <small>Welcome to</small><br>My blog
     </h1>
