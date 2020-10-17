@@ -3,6 +3,9 @@
 @section('title', 'Add new post')
 
 @section('content')
+
+@include ('includes.nav')
+
 @auth
 <main class="container">
     <div class="row pt-5">
