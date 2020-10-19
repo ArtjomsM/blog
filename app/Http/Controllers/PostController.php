@@ -10,10 +10,10 @@ class PostController extends Controller
     public function new(Request $request)
     {
         $post = new Post();
-        $post->title = $request->title;
-        $post->text = $request->text;
-        $post->image = $request->image;
-        $post->topic = $request->topic;
+        $post->title = htmlentities(trim($request->title));
+        $post->text = trim($request->text);
+        $post->image = htmlentities(trim($request->image));
+        $post->topic = htmlentities(trim($request->topic));
 
         $post->save();
 

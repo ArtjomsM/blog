@@ -11,7 +11,7 @@ class EmailController extends Controller
     public function get_email(Request $request)
     {
         $email = new Email();
-        $email->email = $request->email;
+        $email->email = htmlentities(trim($request->email));
 
         $email->save();
 
@@ -22,9 +22,9 @@ class EmailController extends Controller
     public function send_email(Request $request)
     {
         $contact = new Contact();
-        $contact->name = $request->name;
-        $contact->email = $request->email;
-        $contact->message = $request->message;
+        $contact->name = htmlentities(trim($request->name));
+        $contact->email = htmlentities(trim($request->email));
+        $contact->message = htmlentities(trim($request->message));
 
         $contact->save();
 
