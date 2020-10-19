@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\Comment;
 
 class PostController extends Controller
 {
@@ -20,12 +21,16 @@ class PostController extends Controller
         return redirect('/');
     }
 
-    public function view($id)
+    public function get_single_post($id)
     {
         $post = Post::findOrFail($id);
+        $comments = Comment::orderBy('created_at', 'DESC')
+            ->where('post_id', $id)
+            ->get();
 
         return view('single-post', [
-            'post' => $post
+            'post' => $post,
+            'comments' => $comments
         ]);
     }
 
@@ -84,5 +89,4 @@ class PostController extends Controller
             'first_post' => $first_post
         ]);
     }
-
 }
