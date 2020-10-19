@@ -15,7 +15,7 @@
                 @endif
             </div>
 
-            <div class="col-4 offset-md-3 col-md-3 offset-lg-5 col-lg-2 offset-xl-6 d-flex justify-content-end flex-wrap align-items-end">
+            <div class="col-4 offset-md-3 col-md-3 offset-lg-5 col-lg-2 offset-xl-6 d-flex flex-column justify-content-end flex-wrap align-items-end">
                 <div>
                     @if (Route::has('login'))
                     @auth
