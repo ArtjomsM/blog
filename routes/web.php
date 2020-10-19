@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes();
 
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
 Route::get('/create', 'App\Http\Controllers\HomeController@create');
 
 Route::post('/new', 'App\Http\Controllers\PostController@new');
