@@ -38,6 +38,8 @@ Route::get('/post/{id}', 'App\Http\Controllers\PostController@get_single_post');
 
 Route::get('/all-posts', 'App\Http\Controllers\PostController@get_all_posts');
 
+Route::get('/delete-post/{id}', 'App\Http\Controllers\PostController@delete_post');
+
 Route::get('/all-posts/asc', 'App\Http\Controllers\PostController@get_all_posts_asc');
 
 Route::post('/send', 'App\Http\Controllers\EmailController@send_email');

@@ -12,6 +12,11 @@
     <div class="row">
         <div class="col">
             <h2 class="text-center text-uppercase pb-5">{{ $post->title }}</h2>
+            @auth
+            <div class="pb-3 text-right">
+                <a href="/delete-post/{{ $post->id }}" class="delete text-uppercase text-decoration-none font-weight-bold border border-danger py-1 px-3">X</a>
+            </div>
+            @endif
             <div class="position-relative">
                 <a href="/topic/{{ $post->topic }}"><span class="topic bg-white border border-dark text-uppercase py-2 px-4 position-absolute">{{ $post->topic }}</span></a>
                 <div class="image" style="background-image: url({{ $post->image }});"></div>

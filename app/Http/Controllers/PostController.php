@@ -89,4 +89,11 @@ class PostController extends Controller
             'first_post' => $first_post
         ]);
     }
+
+    public function delete_post($id)
+    {
+        Post::where('id', $id)->delete();
+
+        return redirect('/');
+    }
 }

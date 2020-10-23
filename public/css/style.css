@@ -157,3 +157,17 @@ nav {
 }
 
 /*  / DROPDOWN BUTTONS */
+
+/* SINGLE POST */
+
+.delete {
+    color: red;
+    font-size: 1.2rem;
+}
+
+.delete:hover {
+    background-color: rgb(233, 94, 94);
+    color: rgb(0, 0, 0) !important;
+}
+
+/* / SINGLE POST */
