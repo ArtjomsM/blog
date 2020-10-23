@@ -18,4 +18,11 @@ class CommentController extends Controller
 
         return back();
     }
+
+    public function delete_comment($id)
+    {
+        Comment::where('id', $id)->delete();
+
+        return back();
+    }
 }

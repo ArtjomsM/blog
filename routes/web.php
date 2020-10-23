@@ -47,3 +47,5 @@ Route::post('/send', 'App\Http\Controllers\EmailController@send_email');
 Route::post('/email', 'App\Http\Controllers\EmailController@get_email');
 
 Route::post('/comment', 'App\Http\Controllers\CommentController@post_comment');
+
+Route::get('/delete-comment/{id}', 'App\Http\Controllers\CommentController@delete_comment');

@@ -45,7 +45,7 @@
     </div>
     @if (count($comments) > 0)
     <div class="row pt-4">
-        <div class="col">
+        <div class="col-11">
             @foreach ($comments as $comment)
             <div class="border mb-2 p-2">
                 <div class="d-flex">
@@ -55,8 +55,14 @@
                 <p class="m-0">{{ $comment->comment }}</p>
 
             </div>
-            @endforeach
+
         </div>
+        @auth
+        <div class="col-1">
+            <a href="/delete-comment/{{ $comment->id }}" class="delete text-uppercase text-decoration-none font-weight-bold border border-danger py-1 px-3">X</a>
+        </div>
+        @endif
+        @endforeach
     </div>
     @endif
 </main>
