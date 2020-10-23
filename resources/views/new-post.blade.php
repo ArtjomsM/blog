@@ -50,10 +50,10 @@
 
 </main>
 @else
-<div class="container">
+<main class="container">
     <h2 class="text-center pt-5 text-uppercase">Permission denied</h2>
     <a href="{{ route('login') }}" class="text-sm text-body underline">Login</a>
-</div>
+</main>
 
 @endif
 
